@@ -664,6 +664,10 @@ footer nav a {
     // padding: 5%;
     }
 
+	&:nth-of-type(even) {
+      background: rgba(81,140,215,0.75);
+  	}
+
     // &:nth-of-type(even) {
     //   background: rgba(81,140,215,0.75);
     //   float: right;
