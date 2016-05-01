@@ -734,10 +734,16 @@ footer nav a {
   background: #eee;
   // display: none;
 
+  .senior-container {
+	  display: flex;
+	  justify-content: space-around;
+	  flex-wrap: wrap;
+  }
+
 
   .mentor {
     float: left;
-    width: 45%;
+    width: 30%;
     // margin: 0 auto;
     // margin-right: 10%;
     background: #fafafa;
@@ -766,7 +772,7 @@ footer nav a {
 
 
     img {
-      width: 45%;
+      width: 80%;
       float: none;
       margin: 0 auto;
       display: block;
@@ -959,7 +965,7 @@ footer nav a {
         // vertical-align: middle;
         text-align: center;
         // display: table-cell;
-        width: 33%;
+        width: 30%;
         padding: 3.2rem 3.125rem;
         transition: all 0.5s ease-in-out;
         @media screen and (max-width: 62em) {
