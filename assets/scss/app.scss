@@ -947,12 +947,19 @@ footer nav a {
 
 .usg {
     width: 100%;
-    display: table;
+    // display: table;
+
+	.usg-container {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
     .usg-box {
-        vertical-align: middle;
+        // vertical-align: middle;
         text-align: center;
-        display: table-cell;
-        width: 25%;
+        // display: table-cell;
+        width: 33%;
         padding: 3.2rem 3.125rem;
         transition: all 0.5s ease-in-out;
         @media screen and (max-width: 62em) {
