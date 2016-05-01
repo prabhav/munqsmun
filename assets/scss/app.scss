@@ -9,8 +9,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -22,7 +22,7 @@ time, mark, audio, video {
 	text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -75,14 +75,14 @@ em {
 ::-webkit-scrollbar {
     width: 12px;
 }
- 
+
 ::-webkit-scrollbar-track {
-    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     background: #fff;
 }
- 
-::-webkit-scrollbar-thumb {    
-    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+
+::-webkit-scrollbar-thumb {
+    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
     background: #ddd;
     transition: 0.3s;
     &:hover {
@@ -242,7 +242,7 @@ h5 {
 h6 {
     font: 700 1.7em/1.5 'Roboto Slab', Rockwell, Helvetica, sans-serif, sans-serif;
     text-transform: uppercase;
-    /*margin-bottom: .5%;*/    
+    /*margin-bottom: .5%;*/
     color: #444;
 }
 
@@ -290,7 +290,7 @@ header {
 	// 		padding: 0.4em 0.7em;
 	// 		font-size: 1em;
 	// 		font-weight: 400;
-			
+
 	// 		font-family: 'Lato';
 	// 	}
 	// }
@@ -332,7 +332,7 @@ header {
 
     img {
     	margin-bottom: 1.2em;
-    	
+
     	width: 56%;
 
     @media screen and (max-width: $break50) {
@@ -355,13 +355,13 @@ header {
 .grid-wrap h5 {
     font: 700 1.7em/1.5 'Roboto Slab', Rockwell, Helvetica, sans-serif, sans-serif;
     text-transform: uppercase;
-    /*margin-bottom: .5%;*/    
+    /*margin-bottom: .5%;*/
     color: #444;
 }
 
 .grid-wrap h6 {
     font: 300 2em/1.5 'Roboto Slab', Rockwell, Helvetica, sans-serif, sans-serif;
-    margin-bottom: 6.5%;    
+    margin-bottom: 6.5%;
     color: #565656;
 }
 
@@ -430,7 +430,7 @@ header {
         margin: 0 auto;
         display: block;
         }
-        
+
   		}
 
 		article {
@@ -531,7 +531,7 @@ footer a:hover, footer a:focus {
     color: #333;
 }
 
-footer h4 {    
+footer h4 {
     color: #444;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -617,8 +617,8 @@ footer nav a {
     overflow: hidden;
 }
 
-.Flexible-container iframe,   
-.Flexible-container object,  
+.Flexible-container iframe,
+.Flexible-container object,
 .Flexible-container embed {
     position: absolute;
     top: 0;
@@ -628,10 +628,16 @@ footer nav a {
 }
 
 #committees {
-  background: #eee;
+  // background: #eee;
 
   .inner {
     width: 80%;
+
+	.committee-container {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-around;
+	}
 
     @media screen and (max-width: $break50) {
       width: 85%;
@@ -639,37 +645,38 @@ footer nav a {
   }
 
   .committee {
-    float: left;
+    // float: left;
     width: 45%;
     padding: 2em;
     text-align: center;
-    margin: 5rem 0 0;
+    // margin: 5rem 0 0;
+	margin-top: 2.5em;
     background: rgba(83,193,163,0.9);
     clear: none;
-    @include vendorize(box-shadow, 0 0 25px rgba(0,0,0,0.25));
+    // @include vendorize(box-shadow, 0 0 25px rgba(0,0,0,0.25));
 
     @media screen and (max-width: $break50) {
     width: 100%;
-    float: none;
-    margin: 3rem auto 0;
-    display: block;
-    margin-bottom: 1em;
-    padding: 5%;
+    // float: none;
+    // margin: 3rem auto 0;
+    // display: block;
+    // margin-bottom: 1em;
+    // padding: 5%;
     }
 
-    &:nth-of-type(even) {
-      background: rgba(81,140,215,0.75);
-      float: right;      
-
-      @media screen and (max-width: $break50) {
-    width: 100%;
-    float: none;
-    margin: 3rem auto 0;
-    display: block;
-    margin-bottom: 1em;
-    padding: 5%;
-    }
-    }
+    // &:nth-of-type(even) {
+    //   background: rgba(81,140,215,0.75);
+    //   float: right;
+	//
+    //   @media screen and (max-width: $break50) {
+    // width: 100%;
+    // float: none;
+    // margin: 3rem auto 0;
+    // display: block;
+    // margin-bottom: 1em;
+    // padding: 5%;
+    // }
+    // }
 
     &:first-child {
       // @media screen and (max-width: $break50) {
@@ -690,7 +697,7 @@ footer nav a {
       color: #efefef;
       margin-bottom: 1em;
       a {color: #fff; border-bottom: 1px solid white}
-    } 
+    }
 
     p {
       color: #eee;
@@ -723,7 +730,7 @@ footer nav a {
   background: #eee;
   // display: none;
 
-  
+
   .mentor {
     float: left;
     width: 45%;
